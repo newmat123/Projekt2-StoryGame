@@ -11,8 +11,11 @@ public class FollowMouseScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        var ang = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.AngleAxis(ang, Vector3.forward);
     }
 }
