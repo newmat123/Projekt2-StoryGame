@@ -11,8 +11,7 @@ public class cameraMoveScript : MonoBehaviour
    
     private void changeCameraPosTo()
     {
-
-        if(cam.transform.position == rooms[1].transform.position)
+        if (cam.transform.position == rooms[1].transform.position)
         {
             cam.transform.position = rooms[0].transform.position;
         }
@@ -20,7 +19,6 @@ public class cameraMoveScript : MonoBehaviour
         {
             cam.transform.position = rooms[1].transform.position;
         }
-
     }
 
 
@@ -30,7 +28,5 @@ public class cameraMoveScript : MonoBehaviour
         {
             changeCameraPosTo();
         }
-
     }
-
 }
