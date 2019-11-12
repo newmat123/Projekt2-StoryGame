@@ -6,15 +6,18 @@ public class cameraMoveScript : MonoBehaviour
 {
 
     public GameObject[] camPoses;
-    public GameObject[] playerStartPoses;
+    public GameObject[] Room1playerStartPoses;
+    public GameObject[] Room2playerStartPoses;
+    public GameObject[] Room3playerStartPoses;
+
 
     public GameObject cam;
 
-    public void ChangeRoomTo(int i, int j)
+    public void ChangeRoomTo(int i, GameObject j)
     {
         //flytter spiller og cam til pos x
         cam.transform.position = camPoses[i].transform.position;
-        this.transform.position = playerStartPoses[j].transform.position;
+        this.transform.position = j.transform.position;
 
         //eventuelt trigger dør lyd her
 
@@ -28,27 +31,27 @@ public class cameraMoveScript : MonoBehaviour
         {
             case "Room1":
                 //køre funktionen og siger hvor der skal skiftes til
-                ChangeRoomTo(0, 0);
+                ChangeRoomTo(0, Room1playerStartPoses[0]);
                 break;
 
             case "Room11":
-                ChangeRoomTo(0, 3);
+                ChangeRoomTo(0, Room1playerStartPoses[1]);
                 break;
 
             case "Room2":
-                ChangeRoomTo(1, 1);
+                ChangeRoomTo(1, Room2playerStartPoses[0]);
                 break;
 
             case "Room3":
-                ChangeRoomTo(2, 2);
+                ChangeRoomTo(2, Room3playerStartPoses[0]);
                 break;
 
             case "Room4":
-                ChangeRoomTo(3, 3);
+                ChangeRoomTo(3, Room3playerStartPoses[0]);
                 break;
 
             case "Room5":
-                ChangeRoomTo(4, 4);
+                ChangeRoomTo(4, Room3playerStartPoses[0]);
                 break;
         }
     }

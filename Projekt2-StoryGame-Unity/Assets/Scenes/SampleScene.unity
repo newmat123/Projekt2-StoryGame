@@ -297,11 +297,13 @@ MonoBehaviour:
   - {fileID: 1910334076}
   - {fileID: 515208019}
   - {fileID: 760869785}
-  playerStartPoses:
+  Room1playerStartPoses:
   - {fileID: 709782450}
-  - {fileID: 1538446232}
-  - {fileID: 90735205}
   - {fileID: 317915489}
+  Room2playerStartPoses:
+  - {fileID: 1538446232}
+  Room3playerStartPoses:
+  - {fileID: 90735205}
   cam: {fileID: 519420028}
 --- !u!1 &36002156
 GameObject:
