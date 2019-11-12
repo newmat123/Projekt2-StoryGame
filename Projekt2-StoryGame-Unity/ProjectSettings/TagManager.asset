@@ -8,6 +8,7 @@ TagManager:
   - Room2
   - Room3
   - Room4
+  - Room11
   layers:
   - Default
   - TransparentFX
