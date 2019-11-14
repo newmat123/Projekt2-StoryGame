@@ -6,11 +6,11 @@ using UnityEngine;
 public class lightScript : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
+//    [SerializeField] private LayerMask enemyLayerMask;
     private Mesh mesh;
     private Vector3 origin;
     private float startingAngle;
     private float fov;
-
     private void Start()
     {
         mesh = new Mesh();
@@ -39,23 +39,29 @@ public class lightScript : MonoBehaviour
         {
             Vector3 vertex;
             RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAng(angle), viewDistance, layerMask);
-            
+
+           // RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAng(angle), viewDistance, enemyLayerMask);
+
+
             if (raycastHit2D.collider == null)
             {
                 //no hit
                 vertex = origin + GetVectorFromAng(angle) * viewDistance;
-            }else if (raycastHit2D.collider.tag == "Enemy")
-            {
-                Debug.Log("yes");
-                vertex = raycastHit2D.point;
             }
             else
             {
                 // Hit object
                 vertex = raycastHit2D.point;
+                //Debug.Log(raycastHit2D.collider.gameObject.name);
+                if (raycastHit2D.collider.gameObject.CompareTag("Enemy"))
+                {
+                    Destroy(raycastHit2D.collider.gameObject, 0.3f);   
+                }
             }
             
             vertices[vertexIndex] = vertex;
+
+            
 
             if (i > 0)
             {
