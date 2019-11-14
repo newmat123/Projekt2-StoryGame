@@ -52,9 +52,13 @@ public class lightScript : MonoBehaviour
             {
                 // Hit object
                 vertex = raycastHit2D.point;
+
                 //Debug.Log(raycastHit2D.collider.gameObject.name);
+               
+                //Hvis spillerens lygte rammer et object med tagget "Enemy"
                 if (raycastHit2D.collider.gameObject.CompareTag("Enemy"))
                 {
+                    //fjern objektet
                     Destroy(raycastHit2D.collider.gameObject, 0.3f);   
                 }
             }

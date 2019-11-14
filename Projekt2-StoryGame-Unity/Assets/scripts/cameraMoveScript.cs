@@ -21,8 +21,9 @@ public class cameraMoveScript : MonoBehaviour
 
         //eventuelt trigger dør lyd her
 
-    }
+        //Få enemy til at følge efter spilleren
 
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

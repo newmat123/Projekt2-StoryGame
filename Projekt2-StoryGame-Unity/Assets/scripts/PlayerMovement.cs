@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        
         //modtager input
         float inputHori = Input.GetAxis("Horizontal");
         float inputVerti = Input.GetAxis("Vertical");
@@ -36,22 +34,20 @@ public class PlayerMovement : MonoBehaviour
         //sætter spillerens fart * hastigheden.
         rbody.velocity = movement * speed;
 
+        //Sørger for at spilleren kan animeres når den bevæger sig
         if (movement != Vector2.zero)
         {
-            anim.SetBool("iswalking", true);
             anim.SetFloat("X", inputHori);
             anim.SetFloat("Y", inputVerti);
-        }
-        else
-        {
-            anim.SetBool("iswalking", false);
         }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
+        //Hvis vi rammer et object med taget "Pickups"
         if (coll.gameObject.tag == "Pickups")
-        { 
+        {
+            //Skal den fjerne objektet og tilføje 1 til "pickUpValue"
             Destroy(pickups);
             pickUpValue++;
         }
