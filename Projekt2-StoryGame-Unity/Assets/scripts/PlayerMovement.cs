@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
 
+    public GameObject pickups;
+
+    public int pickUpValue;
+
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -42,6 +46,14 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("iswalking", false);
         }
-        
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Pickups")
+        { 
+            Destroy(pickups);
+            pickUpValue++;
+        }
     }
 }
