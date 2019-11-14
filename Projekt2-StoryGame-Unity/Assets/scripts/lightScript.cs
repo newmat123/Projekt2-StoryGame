@@ -44,6 +44,10 @@ public class lightScript : MonoBehaviour
             {
                 //no hit
                 vertex = origin + GetVectorFromAng(angle) * viewDistance;
+            }else if (raycastHit2D.collider.tag == "Enemy")
+            {
+                Debug.Log("yes");
+                vertex = raycastHit2D.point;
             }
             else
             {

@@ -29,6 +29,9 @@ public class cameraMoveScript : MonoBehaviour
         
         switch (collision.tag)
         {
+            case "Enemy":
+                Debug.Log("yes");
+                break;
             case "Room1":
                 //køre funktionen og siger hvor der skal skiftes til
                 ChangeRoomTo(0, Room1[0]);
