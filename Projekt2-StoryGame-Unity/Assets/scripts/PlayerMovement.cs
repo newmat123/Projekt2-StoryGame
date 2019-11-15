@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
 
-    public GameObject pickups;
-
     public int pickUpValue;
 
     void Start()
@@ -48,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         if (coll.gameObject.tag == "Pickups")
         {
             //Skal den fjerne objektet og tilføje 1 til "pickUpValue"
-            Destroy(pickups);
+            Destroy(coll.gameObject);
             pickUpValue++;
         }
     }
