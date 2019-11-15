@@ -11,6 +11,7 @@ TagManager:
   - Room11
   - Enemy
   - Pickups
+  - Room33
   layers:
   - Default
   - TransparentFX
