@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
 
     Rigidbody2D rbody;
-
     Animator anim;
 
     public int pickUpValue;
@@ -42,12 +41,18 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        //Hvis vi rammer et object med taget "Pickups"
-        if (coll.gameObject.tag == "Pickups")
+        switch (coll.gameObject.tag)
         {
-            //Skal den fjerne objektet og tilføje 1 til "pickUpValue"
-            Destroy(coll.gameObject);
-            pickUpValue++;
+            // rammer den tagget Enemy. gør det her
+            case "Enemy":
+                Time.timeScale = 0;
+                break;
+
+            //hvis den rammer et pickup. gør det her.
+            case "Pickups":
+                Destroy(coll.gameObject);
+                pickUpValue++;
+                break;
         }
     }
 }

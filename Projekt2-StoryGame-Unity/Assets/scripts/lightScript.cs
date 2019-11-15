@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using CodeMonkey.Utils;
 
 public class lightScript : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
-//    [SerializeField] private LayerMask enemyLayerMask;
+//  [SerializeField] private LayerMask enemyLayerMask;
+
     private Mesh mesh;
     private Vector3 origin;
     private float startingAngle;
     private float fov;
+
     private void Start()
     {
         mesh = new Mesh();
@@ -40,8 +41,7 @@ public class lightScript : MonoBehaviour
             Vector3 vertex;
             RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAng(angle), viewDistance, layerMask);
 
-           // RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAng(angle), viewDistance, enemyLayerMask);
-
+            //RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAng(angle), viewDistance, enemyLayerMask);
 
             if (raycastHit2D.collider == null)
             {
@@ -53,8 +53,6 @@ public class lightScript : MonoBehaviour
                 // Hit object
                 vertex = raycastHit2D.point;
 
-                //Debug.Log(raycastHit2D.collider.gameObject.name);
-               
                 //Hvis spillerens lygte rammer et object med tagget "Enemy"
                 if (raycastHit2D.collider.gameObject.CompareTag("Enemy"))
                 {
@@ -64,8 +62,6 @@ public class lightScript : MonoBehaviour
             }
             
             vertices[vertexIndex] = vertex;
-
-            
 
             if (i > 0)
             {
@@ -81,14 +77,13 @@ public class lightScript : MonoBehaviour
             angle -= angleIncrease;
         }
 
-
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
         mesh.bounds = new Bounds(origin, Vector3.one * 1000f);
-
     }
 
+    
     public void SetOrigin(Vector3 origin)
     {
         this.origin = origin;
@@ -99,12 +94,16 @@ public class lightScript : MonoBehaviour
         startingAngle = GetAngleFromVectorFloat(aimDirection) + fov / 2f;
     }
 
+
+    //udregner en vector udfra en vinkel
     private Vector3 GetVectorFromAng(float ang)
     {
         float angleRad = ang * (Mathf.PI / 180f);
         return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
     }
 
+
+    //udregner vinklen udfra en vector.
     private float GetAngleFromVectorFloat(Vector3 dir)
     {
         dir = dir.normalized;
@@ -116,6 +115,4 @@ public class lightScript : MonoBehaviour
 
         return n;
     }
-
-
 }

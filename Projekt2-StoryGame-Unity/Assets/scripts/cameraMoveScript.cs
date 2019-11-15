@@ -31,36 +31,32 @@ public class cameraMoveScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        switch (collision.tag)
+        switch (collision.name)
         {
-            case "Enemy":
-                //Destroy(this.gameObject);
-                break;
-            case "Room1":
+            case "Room2To1":
                 //køre funktionen og siger hvor der skal skiftes til
                 ChangeRoomTo(0, Room1[0], 5f);
                 break;
 
-            case "Room11":
+            case "Room3To1":
                 ChangeRoomTo(0, Room1[1], 5f);
                 break;
 
-            case "Room2":
+            case "Room1To2":
                 ChangeRoomTo(1, Room2[0], 5f);
                 break;
 
-            case "Room3":
+            case "Room1To3":
                 ChangeRoomTo(2, Room3[0], 5f);
                 break;
 
-            case "Room4":
+            case "Room3To4":
                 ChangeRoomTo(3, Room4[0], 12f);
                 break;
 
-            case "Room33":
+            case "Room4To3":
                 ChangeRoomTo(2, Room3[1], 5f);
                 break;
-
 
         }
     }

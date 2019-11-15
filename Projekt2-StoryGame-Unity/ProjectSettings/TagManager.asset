@@ -4,14 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Room1
-  - Room2
-  - Room3
-  - Room4
-  - Room11
   - Enemy
   - Pickups
-  - Room33
   layers:
   - Default
   - TransparentFX
