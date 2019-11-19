@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class EnemyMoveScript : MonoBehaviour
 {
+
+    //holder spillerens position, så fjenden ved hvor den skal bevæge sig hen.
     public GameObject Player;
     public Rigidbody2D RB;
 
+    //farten fjenden bevæger sig med
     public float step = 5;
-    public float radius;
+
+    //x er det rum som enemyen befindersig i.
+    public int x;
 
     void Update()
     {
-        float dist = Vector3.Distance(Player.transform.position, transform.position);
-        if (dist < radius)
+        //er x lig med room, som er defineret i cameraMoveScript, så gå mod spilleren, ellers stå stille.
+        if (x == FindObjectOfType<cameraMoveScript>().Room)
         { 
             transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, step * Time.deltaTime);
         }

@@ -14,18 +14,26 @@ public class lightScript : MonoBehaviour
 
     private void Start()
     {
+        //gør mesh klar til brug.
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
+
+        //sætter startpos til midten af det game object, som scriptet er plaseret på.
         origin = Vector3.zero;
+
+        //den vinkel, som skal være synlig ud af de 360 grader.
         fov = 75f;
     }
 
     private void LateUpdate()
     {
-
+        //mængden af rays, som bliver til x små trekanter.
         int rayCount = 50;
+        //får vi fra funktionen længere nede.
         float angle = startingAngle;
+        //finder den vikel, hver af de små trekanter skal have.
         float angleIncrease = fov / rayCount;
+        //hvor langt skal spilleren kunne se.
         float viewDistance = 7f;
 
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
@@ -77,18 +85,20 @@ public class lightScript : MonoBehaviour
             angle -= angleIncrease;
         }
 
+        //genereae meshet, med de variabler vi har regnet os frem til.
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
         mesh.bounds = new Bounds(origin, Vector3.one * 1000f);
     }
 
-    
+    //funktion, som kan kaldes fra et andet script, for at sætte lygtens startpos.
     public void SetOrigin(Vector3 origin)
     {
         this.origin = origin;
     }
 
+    //funktion, som kan kaldes fra et andet script, for at sætte ratningen på lygten.
     public void SetAimDirection(Vector3 aimDirection)
     {
         startingAngle = GetAngleFromVectorFloat(aimDirection) + fov / 2f;
