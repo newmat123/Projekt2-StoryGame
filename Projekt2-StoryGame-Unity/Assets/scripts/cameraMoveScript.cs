@@ -14,10 +14,15 @@ public class cameraMoveScript : MonoBehaviour
     public GameObject[] Room4;
 
     //Room er en variabel, som fjenden bruger for at finde ud af hvilke rum spilleren er i.
-    public int Room = 1;
+    public int Room;
 
     //holder cameraet.
     public GameObject cam;
+
+    private void Start()
+    {
+        Room = 1;
+    }
 
     public void ChangeRoomTo(int i, GameObject j, float camSize)
     {

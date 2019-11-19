@@ -22,13 +22,13 @@ public class lightScript : MonoBehaviour
         origin = Vector3.zero;
 
         //den vinkel, som skal være synlig ud af de 360 grader.
-        fov = 75f;
+        fov = 60f;
     }
 
     private void LateUpdate()
     {
         //mængden af rays, som bliver til x små trekanter.
-        int rayCount = 50;
+        int rayCount = 100;
         //får vi fra funktionen længere nede.
         float angle = startingAngle;
         //finder den vikel, hver af de små trekanter skal have.
