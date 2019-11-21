@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class cameraMoveScript : MonoBehaviour
 {
+
+    public AudioSource doorEffect;
+
     //holder alle cameraets positioner.
     public GameObject[] camPoses;
 
@@ -45,6 +48,7 @@ public class cameraMoveScript : MonoBehaviour
         switch (collision.name)
         {
             case "Room2To1":
+                Instantiate(doorEffect);
                 //køre funktionen og siger hvor der skal skiftes til
                 ChangeRoomTo(0, Room1[0], 5f);
                 //definere det rum spilleren befinder sig i.
@@ -52,26 +56,31 @@ public class cameraMoveScript : MonoBehaviour
                 break;
 
             case "Room3To1":
+                Instantiate(doorEffect);
                 ChangeRoomTo(0, Room1[1], 5f);
                 Room = 1;
                 break;
 
             case "Room1To2":
+                Instantiate(doorEffect);
                 ChangeRoomTo(1, Room2[0], 5f);
                 Room = 2;
                 break;
 
             case "Room1To3":
+                Instantiate(doorEffect);
                 ChangeRoomTo(2, Room3[0], 5f);
                 Room = 3;
                 break;
 
             case "Room3To4":
+                Instantiate(doorEffect);
                 ChangeRoomTo(3, Room4[0], 12f);
                 Room = 4;
                 break;
 
             case "Room4To3":
+                Instantiate(doorEffect);
                 ChangeRoomTo(2, Room3[1], 5f);
                 Room = 3;
                 break;

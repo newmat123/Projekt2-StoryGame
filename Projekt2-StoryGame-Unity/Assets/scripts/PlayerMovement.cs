@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
 
     public int pickUpValue;
+    public GameObject deathScreen;
 
     void Start()
     {
+        deathScreen.SetActive(false);
+
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -45,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // rammer den tagget Enemy. gør det her
             case "Enemy":
-                Time.timeScale = 0;
+                deathScreen.SetActive(true);
                 break;
 
             //hvis den rammer et pickup. gør det her.
