@@ -538,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 391012551559232546, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 391012551559232546, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
@@ -585,6 +585,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 391012551559232546, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 391012551559232546, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 391012551559232547, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: deathScreen
@@ -601,6 +611,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 773483795166254908, guid: d29f1a86ca4d29a46b6444a844b60734,
         type: 3}
+    - target: {fileID: 391012551559232549, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8952886112573463500, guid: 56061b2b1bb928c49b1ae3ec72df4cd4,
+        type: 3}
+    - target: {fileID: 391012551559232549, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 391012551559232549, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 391012551559232549, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44d04083a816f4348895759372c44cd3, type: 3}
 --- !u!1 &300428063
