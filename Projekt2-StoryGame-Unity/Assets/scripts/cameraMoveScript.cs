@@ -57,7 +57,7 @@ public class cameraMoveScript : MonoBehaviour
 
             case "Room3To1":
                 Instantiate(doorEffect);
-                ChangeRoomTo(0, Room1[1], 6f);
+                ChangeRoomTo(0, Room1[1], 7.5f);
                 Room = 1;
                 break;
 
