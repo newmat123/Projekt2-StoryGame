@@ -2212,8 +2212,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 105503959}
   step: 1
@@ -2311,8 +2311,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -2328,8 +2328,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -2392,8 +2392,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4caffcdb9248bc842a863813b43d80bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pauseMenu: {fileID: 164185470}
 --- !u!1 &132566854
 GameObject:
@@ -2853,8 +2853,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -3054,8 +3054,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 371438876}
   step: 1
@@ -3604,8 +3604,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24d525794b9956b44b8ef7d5d555ff9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &613809008
 GameObject:
   m_ObjectHideFlags: 0
@@ -16688,8 +16688,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -16729,7 +16729,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &719079997
@@ -16742,8 +16742,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -16859,8 +16859,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 734560482}
   step: 1
@@ -17135,8 +17135,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -17582,8 +17582,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 864553441}
   step: 1
@@ -17856,8 +17856,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -17897,7 +17897,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &962968055
@@ -17910,8 +17910,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -18128,8 +18128,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1026640649}
   step: 1
@@ -18288,8 +18288,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1060091250}
   step: 1
@@ -18353,8 +18353,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2eaa7131c8f3e489ddccc05d7b5f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &1110566637
 GameObject:
   m_ObjectHideFlags: 0
@@ -19019,8 +19019,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -19038,8 +19038,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -19148,8 +19148,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1402544647}
   step: 1
@@ -19347,8 +19347,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1472481104}
   step: 1
@@ -32193,8 +32193,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1500681594}
   step: 1
@@ -36069,8 +36069,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -36254,8 +36254,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 1888080378}
   step: 1
@@ -36755,8 +36755,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34d1d8006ed329d4ba60f3bc0da14293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 29817786}
   RB: {fileID: 2123474414}
   step: 1
@@ -36916,72 +36916,72 @@ PrefabInstance:
     - target: {fileID: 391012551559232547, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: deathScreen
-      value: 
+      value:
       objectReference: {fileID: 608919391}
     - target: {fileID: 391012551559232545, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Fovs
-      value: 
+      value:
       objectReference: {fileID: 1097625938}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: camPoses.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 1910334076}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: camPoses.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 515208019}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: camPoses.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 760869785}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: camPoses.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 780105946}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room1.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 709782450}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room1.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 317915489}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room2.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 1538446232}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room3.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 90735205}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room3.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 1134556587}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Room4.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 191432732}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: cam
-      value: 
+      value:
       objectReference: {fileID: 519420028}
     - target: {fileID: 391012551559232607, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: doorEffect
-      value: 
+      value:
       objectReference: {fileID: 773483795166254908, guid: d29f1a86ca4d29a46b6444a844b60734,
         type: 3}
     m_RemovedComponents: []
