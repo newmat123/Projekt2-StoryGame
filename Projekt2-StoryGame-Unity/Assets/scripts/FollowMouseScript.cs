@@ -21,7 +21,7 @@ public class FollowMouseScript : MonoBehaviour
         Fovs.SetAimDirection(dir);
         Fovs.SetOrigin(transform.position);
         //sætter så spilleresn rotation til den udregnede vinkel
-        transform.rotation = Quaternion.AngleAxis(ang, Vector3.forward);
+        //transform.rotation = Quaternion.AngleAxis(ang, Vector3.forward);
 
     }
 
