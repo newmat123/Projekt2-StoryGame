@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rbody;
     Animator anim;
+    public Text Score_UIText = null; //Score variable
 
     public int pickUpValue;
     public GameObject deathScreen;
@@ -17,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         deathScreen.SetActive(false);
-
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -41,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
             anim.SetFloat("X", inputHori);
             anim.SetFloat("Y", inputVerti);
         }
+
+        Score_UIText.text = "Notes: " + pickUpValue.ToString();
+
     }
 
     void OnCollisionEnter2D(Collision2D coll)
