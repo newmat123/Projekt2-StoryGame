@@ -7,7 +7,6 @@ public class EnemyMoveScript : MonoBehaviour
 
     //holder spillerens position, så fjenden ved hvor den skal bevæge sig hen.
     public GameObject Player;
-    public Rigidbody2D RB;
 
     //farten fjenden bevæger sig med
     public float step = 5;
