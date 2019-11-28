@@ -13527,6 +13527,11 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 391012551559232547, guid: 44d04083a816f4348895759372c44cd3,
+        type: 3}
+      propertyPath: notesText
+      value: 
+      objectReference: {fileID: 1297758638}
     - target: {fileID: 391012551559232545, guid: 44d04083a816f4348895759372c44cd3,
         type: 3}
       propertyPath: Fovs
