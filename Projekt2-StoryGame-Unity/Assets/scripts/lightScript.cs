@@ -95,7 +95,7 @@ public class lightScript : MonoBehaviour
     //funktion, som kan kaldes fra et andet script, for at sætte lygtens startpos.
     public void SetOrigin(Vector3 origin)
     {
-        this.origin = origin;
+        this.origin = origin - new Vector3(0,0.5f);
     }
 
     //funktion, som kan kaldes fra et andet script, for at sætte ratningen på lygten.

@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rbody;
     Animator anim;
+    public TextMeshProUGUI notesText;
 
     public static int pickUpValue;
     public GameObject deathScreen;
@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
         deathScreen.SetActive(false);
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        notesText.text = "Notes: 0/3";
     }
 
 
@@ -42,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetFloat("Y", inputVerti);
         }
 
-
     }
 
     void OnCollisionEnter2D(Collision2D coll)
@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(coll.gameObject);
             pickUpValue++;
+            notesText.text = "Notes: " + pickUpValue + "/3";
         }
     }
 }
