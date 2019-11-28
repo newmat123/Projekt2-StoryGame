@@ -22,6 +22,9 @@ public class cameraMoveScript : MonoBehaviour
     //holder cameraet.
     public GameObject cam;
 
+
+    public GameObject deathScreen;
+
     private void Start()
     {
         Room = 1;
@@ -47,6 +50,11 @@ public class cameraMoveScript : MonoBehaviour
         //switch tjækker om der er nogle af de definerede cases, som er ens med collision.name.
         switch (collision.name)
         {
+            // rammer den Enemyen. gør det her
+            case "Pennywise":
+                deathScreen.SetActive(true);
+                break;
+
             case "Room2To1":
                 Instantiate(doorEffect);
                 //køre funktionen og siger hvor der skal skiftes til

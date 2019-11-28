@@ -45,18 +45,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        switch (coll.gameObject.tag)
+        //hvis den rammer et pickup. gør det her.
+        if (coll.gameObject.tag == "Pickups")
         {
-            // rammer den tagget Enemy. gør det her
-            case "Enemy":
-                deathScreen.SetActive(true);
-                break;
-
-            //hvis den rammer et pickup. gør det her.
-            case "Pickups":
-                Destroy(coll.gameObject);
-                pickUpValue++;
-                break;
+            Destroy(coll.gameObject);
+            pickUpValue++;
         }
     }
 }
