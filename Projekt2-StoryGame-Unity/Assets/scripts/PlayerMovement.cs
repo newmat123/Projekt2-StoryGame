@@ -11,9 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rbody;
     Animator anim;
-    public Text Score_UIText = null; //Score variable
 
-    public int pickUpValue;
+    public static int pickUpValue;
     public GameObject deathScreen;
 
     void Start()
@@ -43,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetFloat("Y", inputVerti);
         }
 
-        Score_UIText.text = "Notes: " + pickUpValue.ToString();
 
     }
 
