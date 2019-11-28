@@ -50,7 +50,7 @@ public class cameraMoveScript : MonoBehaviour
             case "Room2To1":
                 Instantiate(doorEffect);
                 //køre funktionen og siger hvor der skal skiftes til
-                ChangeRoomTo(0, Room1[0], 6f);
+                ChangeRoomTo(0, Room1[0], 7.5f);
                 //definere det rum spilleren befinder sig i.
                 Room = 1;
                 break;
