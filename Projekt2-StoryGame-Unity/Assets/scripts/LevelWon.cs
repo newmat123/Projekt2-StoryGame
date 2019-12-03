@@ -10,6 +10,8 @@ public class LevelWon : MonoBehaviour
     public GameObject completeLevelUI;
     private int score;
 
+    public int LevelWonValue;
+
     public void Start()
     {
     }
@@ -21,6 +23,12 @@ public class LevelWon : MonoBehaviour
     public void Update()
     {
         score = PlayerMovement.pickUpValue;
+
+        if (score >= LevelWonValue)
+        {
+            CompleteLevel();
+        }
+
         Score_UIText.text = "Notes: " + score.ToString();
         
     }
