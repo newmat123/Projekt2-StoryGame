@@ -16,20 +16,17 @@ public class LevelWon : MonoBehaviour
     {
     }
 
-    public void CompleteLevel()
-    {
-        completeLevelUI.SetActive(true);
-    }
     public void Update()
     {
         score = PlayerMovement.pickUpValue;
 
         if (score >= LevelWonValue)
         {
-            CompleteLevel();
+            completeLevelUI.SetActive(true);
         }
 
-        Score_UIText.text = "Items: " + score.ToString();
+        //Teksten der står i spillet plus vores score variable der laves om til en string
+        Score_UIText.text = "Items: " + score.ToString(); 
         
     }
     
