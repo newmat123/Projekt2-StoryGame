@@ -29,7 +29,7 @@ public class LevelWon : MonoBehaviour
             CompleteLevel();
         }
 
-        Score_UIText.text = "Notes: " + score.ToString();
+        Score_UIText.text = "Items: " + score.ToString();
         
     }
     

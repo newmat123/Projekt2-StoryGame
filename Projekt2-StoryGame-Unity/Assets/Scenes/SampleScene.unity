@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 34557675}
   - component: {fileID: 34557673}
   m_Layer: 10
-  m_Name: greenPickUp
+  m_Name: Kanin
   m_TagString: Pickups
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,13 +228,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34557671}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.58, y: -16.25, z: 29.597927}
-  m_LocalScale: {x: 7.720002, y: 6.99, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -13.91, y: -18.86, z: 29.597927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1798554402}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!61 &34557673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -248,18 +248,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.076500416, y: -0.0764637}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.0780096, y: 1.0636635}
   m_EdgeRadius: 0
 --- !u!212 &34557675
 SpriteRenderer:
@@ -299,8 +299,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.16316223, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6225edc662e0a5546a6935a53b306223, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4762,7 +4762,7 @@ GameObject:
   - component: {fileID: 814558767}
   - component: {fileID: 814558768}
   m_Layer: 10
-  m_Name: greenPickUp
+  m_Name: Ur
   m_TagString: Pickups
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4776,8 +4776,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814558765}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -20.511398, y: -5.4807405, z: 29.597927}
-  m_LocalScale: {x: 7.720002, y: 6.99, z: 1}
+  m_LocalPosition: {x: -20.511398, y: -2.12, z: 29.597927}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 223017620}
   m_RootOrder: 3
@@ -4820,8 +4820,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.16316223, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5a114335174855a4d9caf99b3ca42653, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4844,18 +4844,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.003241524, y: -0.16045576}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.62571454, y: 0.60850954}
   m_EdgeRadius: 0
 --- !u!1 &848496169
 GameObject:
@@ -14026,6 +14026,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: lygte
       objectReference: {fileID: 0}
+    - target: {fileID: 3159944066032900070, guid: 3f94781a5fb60c44a8fde98bfe523503,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3159944066032900090, guid: 3f94781a5fb60c44a8fde98bfe523503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14148,12 +14153,12 @@ PrefabInstance:
     - target: {fileID: 4059911938884367676, guid: 358c660bac948554cb55b3c563800aa9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3
+      value: -20.58
       objectReference: {fileID: 0}
     - target: {fileID: 4059911938884367676, guid: 358c660bac948554cb55b3c563800aa9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.13
+      value: -48.65
       objectReference: {fileID: 0}
     - target: {fileID: 4059911938884367676, guid: 358c660bac948554cb55b3c563800aa9,
         type: 3}
