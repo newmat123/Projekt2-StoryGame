@@ -15,6 +15,9 @@ public class cameraMoveScript : MonoBehaviour
     public GameObject[] Room2;
     public GameObject[] Room3;
     public GameObject[] Room4;
+    public GameObject[] Room5;
+    public GameObject[] Room6;
+    public GameObject[] Room7;
 
     //Room er en variabel, som fjenden bruger for at finde ud af hvilke rum spilleren er i.
     public int Room;
@@ -63,36 +66,93 @@ public class cameraMoveScript : MonoBehaviour
                 Room = 1;
                 break;
 
-            case "Room3To1":
+            case "Room2To3":
                 Instantiate(doorEffect);
-                ChangeRoomTo(0, Room1[1], 7.5f);
-                Room = 1;
-                break;
-
-            case "Room1To2":
-                Instantiate(doorEffect);
-                ChangeRoomTo(1, Room2[0], 5f);
-                Room = 2;
-                break;
-
-            case "Room1To3":
-                Instantiate(doorEffect);
-                ChangeRoomTo(2, Room3[0], 5f);
+                ChangeRoomTo(2, Room3[0], 7.5f);
                 Room = 3;
+                break;
+
+            case "Room2To4":
+                Instantiate(doorEffect);
+                ChangeRoomTo(3, Room4[1], 7.5f);
+                Room = 4;
+                break;
+
+            case "Room2To6":
+                Instantiate(doorEffect);
+                ChangeRoomTo(5, Room6[0], 10f);
+                Room = 6;
+                break;
+
+
+
+            case "Room3To2":
+                Instantiate(doorEffect);
+                ChangeRoomTo(1, Room2[1], 10f);
+                Room = 2;
                 break;
 
             case "Room3To4":
                 Instantiate(doorEffect);
-                ChangeRoomTo(3, Room4[0], 12f);
+                ChangeRoomTo(3, Room4[0], 7.5f);
                 Room = 4;
                 break;
 
+
+
+            case "Room1To2":
+                Instantiate(doorEffect);
+                ChangeRoomTo(1, Room2[0], 10f);
+                Room = 2;
+                break;
+
+            
+
             case "Room4To3":
                 Instantiate(doorEffect);
-                ChangeRoomTo(2, Room3[1], 5f);
+                ChangeRoomTo(2, Room3[1], 7.5f);
                 Room = 3;
                 break;
 
+            case "Room4To2":
+                Instantiate(doorEffect);
+                ChangeRoomTo(1, Room2[2], 10f);
+                Room = 2;
+                break;
+
+            case "Room4To5":
+                Instantiate(doorEffect);
+                ChangeRoomTo(4, Room5[0], 7.5f);
+                Room = 5;
+                break;
+
+
+
+            case "Room5To4":
+                Instantiate(doorEffect);
+                ChangeRoomTo(3, Room4[2], 7.5f);
+                Room = 4;
+                break;
+
+
+            case "Room6To2":
+                Instantiate(doorEffect);
+                ChangeRoomTo(1, Room2[3], 10f);
+                Room = 2;
+                break;
+
+            case "Room6To7":
+                Instantiate(doorEffect);
+                ChangeRoomTo(6, Room7[0], 10f);
+                Room = 7;
+                break;
+
+
+            case "Room7To6":
+                Instantiate(doorEffect);
+                ChangeRoomTo(5, Room6[1], 10f);
+                Room = 6;
+                break;
         }
     }
 }
