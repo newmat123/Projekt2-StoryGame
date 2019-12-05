@@ -24,7 +24,7 @@ public class LevelWon : MonoBehaviour
         }
 
         //Teksten der står i spillet plus vores score variable der laves om til en string
-        Score_UIText.text = "Items: " + score.ToString() +"/" + LevelWonValue; 
+        Score_UIText.text = "Items: " + score.ToString(); 
         
     }
     
